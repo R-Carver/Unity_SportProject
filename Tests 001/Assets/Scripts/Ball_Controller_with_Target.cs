@@ -7,33 +7,50 @@ public class Ball_Controller_with_Target : MonoBehaviour
     public Rigidbody ball;
     public Transform target;
 
-    public float h = 25;
+    public float h = 2;
     public float gravity = -18;
 
     public bool debugPath = true;
     public bool launched = false;
 
     List<Vector3> trajectory = new List<Vector3>();
+    Vector3[] trajectoryForLineRend;
+    Transform lineRenderer;
 
     void Start(){
         ball.useGravity = false;
+        lineRenderer = this.gameObject.transform.GetChild(0);
+        
     }
 
     void Update(){
+
         if(Input.GetKeyDown(KeyCode.Space)){
 
             // get trajectory
             trajectory = GetPath();
-
+            
             Launch();
             launched = true;
         }
 
         if(debugPath && !launched){
             DrawPath();
+            RenderTrajectory();
+            
         }else if(launched){
             DrawPathFromList(trajectory);
+            
         }
+    }
+
+    void RenderTrajectory(){
+
+        //Render trajectory in the Game View
+            trajectory = GetPath();
+            trajectoryForLineRend = trajectory.ToArray();
+            TrajectoryRenderer renderer = lineRenderer.GetComponent<TrajectoryRenderer>();
+            renderer.UpdateTrajectory(trajectoryForLineRend);
     }
 
     void Launch(){
@@ -58,6 +75,8 @@ public class Ball_Controller_with_Target : MonoBehaviour
     void DrawPath(){
         LaunchData launchData = CalculateLaunchData();
         Vector3 previousDrawPoint = ball.position;
+
+        LineRenderer line = GetComponent<LineRenderer>();
 
         int resolution = 30;
         for(int i = 1; i <= resolution; i++){
