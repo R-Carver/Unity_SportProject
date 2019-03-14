@@ -42,6 +42,9 @@ public class Ball_Controller_with_Target : MonoBehaviour
             DrawPathFromList(trajectory);
             
         }
+
+        //Debug.Log("velocity    " +   ball.velocity);
+        //Debug.Log("ang velocity    " + ball.angularVelocity);
     }
 
     void RenderTrajectory(){
@@ -57,6 +60,7 @@ public class Ball_Controller_with_Target : MonoBehaviour
         Physics.gravity = Vector3.up * gravity;
         ball.useGravity = true;
         ball.velocity = CalculateLaunchData().initialVelocity;
+        ball.angularVelocity = Vector3.zero;
     }
 
     LaunchData CalculateLaunchData(){
@@ -119,6 +123,14 @@ public class Ball_Controller_with_Target : MonoBehaviour
             Debug.DrawLine(previousDrawPoint, drawpoint, Color.green);
             previousDrawPoint = drawpoint;
         }
+    }
+
+    public void ResetLauncher()
+    {
+        ball.useGravity = false;
+        ball.velocity = Vector3.zero;
+        ball.angularVelocity = Vector3.zero;
+        launched = false;
     }
 
     struct LaunchData{

@@ -19,9 +19,9 @@ public class FaceTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 relativePos = receiver.position - transform.position;
+        /* Vector3 relativePos = receiver.position - transform.position;
 
         Quaternion rotation = Quaternion.LookRotation(relativePos);
-        transform.rotation = rotation;
+        transform.rotation = rotation;*/
     }
 }
