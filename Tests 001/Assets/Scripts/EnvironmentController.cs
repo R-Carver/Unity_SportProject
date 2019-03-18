@@ -18,6 +18,8 @@ public class EnvironmentController : MonoBehaviour
 
     public Transform ball;
 
+    public Ball_Catcher catcher;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,34 @@ public class EnvironmentController : MonoBehaviour
 
         player.position = playerPos;
         player.rotation = playerRotation;
+
+        // reset all ball stuff
+        ball.position = ballPosition;
+        ball.rotation = ballRotation;/* 
+        Rigidbody ballRB = ball.gameObject.GetComponent<Rigidbody>();
+        ballRB.useGravity = false;
+        ballRB.velocity = Vector3.zero;
+        ballRB.angularVelocity = Vector3.zero;*/
+        Ball_Controller_RL ballController = ball.gameObject.GetComponent<Ball_Controller_RL>();
+        ballController.ResetLauncher();
+    }
+
+    public void resetEnv_RandomSpawn(){
+        
+        // the only different thing here to the normal resetEnv is
+        // the position of the receiver which is now random on the route
+
+        // add a random value to the z position of the receiver
+        //Vector3 randZpos = new Vector3(receiverPos.x , receiverPos.y, (receiverPos.z - Random.Range(0, 5)));
+
+        receiver.position = receiverPos;
+        receiver.rotation = receiverRotation;
+
+        player.position = playerPos;
+        player.rotation = playerRotation;
+
+        // reset catcher
+        catcher.catchBall = false;
 
         // reset all ball stuff
         ball.position = ballPosition;

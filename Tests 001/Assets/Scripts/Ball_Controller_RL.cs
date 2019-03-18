@@ -34,13 +34,13 @@ public class Ball_Controller_RL : MonoBehaviour
             launched = true;
         }
 
-        if(debugPath && !launched){
+        /* if(debugPath && !launched){
             RenderTrajectory();
             
         }else if(launched){
             DrawPathFromList(trajectory);
             
-        }
+        }*/
 
     }
 

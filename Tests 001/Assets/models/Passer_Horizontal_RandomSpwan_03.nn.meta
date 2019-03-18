@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 07937f28b258c964988a01f0fcd95fef
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/models/Passer_Horizontal_RandomSpwan_03.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
