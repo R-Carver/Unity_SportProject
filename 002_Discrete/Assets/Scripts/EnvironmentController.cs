@@ -63,10 +63,14 @@ public class EnvironmentController : MonoBehaviour
         // the only different thing here to the normal resetEnv is
         // the position of the receiver which is now random on the route
 
-        // add a random value to the z position of the receiver
-        //Vector3 randZpos = new Vector3(receiverPos.x , receiverPos.y, (receiverPos.z - Random.Range(0, 5)));
+        int[] randomPoints = {1, 3, 5};
 
-        receiver.position = receiverPos;
+        // add a random value to the z position of the receiver
+        //Vector3 randZpos = new Vector3(receiverPos.x , receiverPos.y, (receiverPos.z - randomPoints[Random.Range(0, 2)]));
+        Vector3 randZpos = new Vector3(receiverPos.x , receiverPos.y, (receiverPos.z - Random.Range(0, 5)));
+
+        //receiver.position = receiverPos;
+        receiver.position = randZpos;
         receiver.rotation = receiverRotation;
 
         player.position = playerPos;
@@ -80,6 +84,7 @@ public class EnvironmentController : MonoBehaviour
         ball.rotation = ballRotation;
         
         Ball_Controller_RL ballController = ball.gameObject.GetComponent<Ball_Controller_RL>();
+        ballController.ballOfPlatform = false;
         ballController.ResetLauncher();
     }
 }

@@ -51,7 +51,7 @@ public class TrajectoryRenderer : MonoBehaviour
           So we just want to save the points and then when the ball is launched, we don't
           want to update this any longer
         */
-        Ball_Controller_RL.LaunchData launchData = ball_controller.currentLaunchData;
+        Ball_Controller_RL.LaunchData launchData = ball_controller.CalculateLaunchData();
         Vector3 previousDrawPoint = ball.position;
         List<Vector3> pathPoints = new List<Vector3>();
         pathPoints.Add(previousDrawPoint);

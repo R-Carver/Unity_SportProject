@@ -11,41 +11,58 @@ public class Ball_Controller_RL : MonoBehaviour
     public float gravity = -18;
 
     public bool launched = false;
+    public bool ballOfPlatform = false;
 
     // this keeps calculating the launchData for the ball
-    public LaunchData currentLaunchData;
+    //public LaunchData currentLaunchData;
 
     void Start(){
         ball.useGravity = false;
 
         //This might be a problem later if the target is not set up yet
-        currentLaunchData = CalculateLaunchData();
+        //currentLaunchData = CalculateLaunchData();
         
     }
 
     void Update(){
         
-        currentLaunchData = CalculateLaunchData();
+        //currentLaunchData = CalculateLaunchData();
+        //print("curr LaunchData   " + currentLaunchData.initialVelocity);
 
+        // keep track if the ball fell of the plane
+        if(ball.position.y < -1)
+        {
+            ballOfPlatform = true;
+        }
     }
 
     public void Launch(){
         Physics.gravity = Vector3.up * gravity;
         ball.useGravity = true;
-        ball.velocity = currentLaunchData.initialVelocity;
+        //print("curr LaunchData   " + currentLaunchData.initialVelocity);
+        ball.velocity = CalculateLaunchData().initialVelocity;
         ball.angularVelocity = Vector3.zero;
     }
 
-    LaunchData CalculateLaunchData(){
+    public LaunchData CalculateLaunchData(){
+
+        //print("target pos  " + target.position);
+        //print("ball pos  " + ball.position);
 
         float displacementY = target.position.y - ball.position.y;
+        //print("displacementY  " + displacementY);
         Vector3 displacementXZ = new Vector3(target.position.x - ball.position.x, 0, target.position.z - ball.position.z);
+        //print("displacementXZ  " + displacementXZ);
 
         float time = (Mathf.Sqrt(-2*h/gravity) + Mathf.Sqrt(2*(displacementY - h)/gravity));
+        //print("time  " + time);
 
         Vector3 velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * h);
+        //print("velocityY  " + velocityY);
         Vector3 velocityXZ = displacementXZ / time;
+        //print("velocityXZ  " + velocityXZ);
 
+        //print(velocityY + velocityXZ);
         return new LaunchData(velocityXZ + velocityY, time);
     }
 
