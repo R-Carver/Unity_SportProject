@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 193cfd596a0277e409111f55d9322884
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/models/Passer_Hori_Discrete_Respawn02.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

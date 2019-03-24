@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b23992c8eb17439887f5e944bf04a40, type: 3}
-  m_Name: PasserBrain
+  m_Name: DefBrain
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 2
-    numStackedVectorObservations: 1
-    vectorActionSize: 0300000002000000
+    vectorObservationSize: 9
+    numStackedVectorObservations: 2
+    vectorActionSize: 030000000300000002000000
     cameraResolutions: []
     vectorActionDescriptions:
-    - MoveTarget
-    - Throw
+    - 
+    - 
+    - 
     vectorActionSpaceType: 0
-  model: {fileID: 11400000, guid: c7ff04ac1fb184944a975a09045b24b5, type: 3}
+  model: {fileID: 0}
   inferenceDevice: 0

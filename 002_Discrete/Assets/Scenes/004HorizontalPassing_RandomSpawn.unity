@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1396a3c5aaa1b854daa97f8a76ad0afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brain: {fileID: 11400000, guid: 19327387b491ec74fa36fd92c6315886, type: 2}
+  brain: {fileID: 11400000, guid: 1026cb1757ac1ca4b880763bc9a2014a, type: 2}
   agentParameters:
     agentCameras: []
     maxStep: 0
@@ -854,6 +854,10 @@ MonoBehaviour:
     targetFrameRate: 60
   resetParameters:
     resetParameters: []
+  agentRunSpeed: 0
+  agentJumpHeight: 0
+  agentJumpVelocity: 777
+  agentJumpVelocityMaxChange: 10
 --- !u!4 &1178943083
 Transform:
   m_ObjectHideFlags: 0

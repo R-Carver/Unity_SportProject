@@ -3,48 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class PassAgent_Horizontal_RandomSpawn : Agent
+public class PassAgent_Hor_Defender : Agent
 {
     
-    public Transform Target;
+    public Transform Receiver;
     public Transform ThrowDestination;
     public Ball_Controller_RL ballController;
     public PassAcademy academy;
     public EnvironmentController EnvController;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //academy.AgentResetIfDone += Test;
-    }
-
-    /* void Test()
-    {
-        print("Testfunc");
-    }*/
-
-    void Update()
-    {
-        //print("agent done from agent: " + IsDone());
-    }
+    private int episodeCounter = 0;
+    private int hitCounter = 0;
 
     public override void AgentReset()
     {   
-        EnvController.resetEnv_RandomSpawn();
+        EnvController.resetEnv();
         TargetHit = false;
         TargetMissed = false;
         ballThrown = false;
         resetCounter = 0;
-        //print("Agent reset");
-        //print("IdDone  " + IsDone());
-        //negRewardTest = 0;
-    }
 
-    public override void AgentOnDone()
-    {   
-        /* TargetHit = false;
-        TargetMissed = false;
-        print("viech");*/
+        episodeCounter++;
     }
 
     public override void CollectObservations()
@@ -52,9 +31,8 @@ public class PassAgent_Horizontal_RandomSpawn : Agent
         // For now we try to only use the position of the receiver on his route
         // as observation for the passer
         // and the calculated target destination of the ball
-        AddVectorObs(Target.position.z);
+        AddVectorObs(Receiver.position.z);
         AddVectorObs(ThrowDestination.position.z);
-        //print("observing...");
     }
 
     // this is set from the Receiver Object when it is hit 
@@ -62,8 +40,6 @@ public class PassAgent_Horizontal_RandomSpawn : Agent
     // this is set by the invisible wall behind the player
     public bool TargetMissed = false;
     private bool ballThrown = false;
-
-    //double negRewardTest = 0.0f;
 
     // use this to prevent the agent from throwing before the target was repositioned
     private int resetCounter = 0;
@@ -100,8 +76,9 @@ public class PassAgent_Horizontal_RandomSpawn : Agent
         }
 
         if(TargetHit == true)
-        {   
-            print("mops");
+        {
+            hitCounter++;
+            print("hit " + hitCounter + " of " + episodeCounter);
             SetReward(1.0f);
             TargetHit = false;
             Done();
@@ -113,11 +90,10 @@ public class PassAgent_Horizontal_RandomSpawn : Agent
             //print("Done after done()  " + IsDone());
         }
 
-        if(ThrowDestination.position.z > Target.position.z)
+        // set small negative reward if the calculated destination is behind receiver 
+        if(ThrowDestination.position.z > Receiver.position.z)
         {
             SetReward(-0.01f);
-            //negRewardTest -= 0.01;
-            //print(negRewardTest);
         }
     
     }

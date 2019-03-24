@@ -7,7 +7,7 @@ public class Ball_Controller_RL : MonoBehaviour
     public Rigidbody ball;
     public Transform target;
 
-    public float h = 2;
+    public float h = 1;
     public float gravity = -18;
 
     public bool launched = false;
