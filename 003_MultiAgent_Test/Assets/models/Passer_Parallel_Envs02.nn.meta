@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ac946123a697eb7428a94e1f9ccea763
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/models/Passer_Parallel_Envs02.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
