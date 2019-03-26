@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 17805207}
   target: {fileID: 661264314}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 211870081}
   target: {fileID: 232127565}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -1044,7 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 235724713}
   target: {fileID: 178432748}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 268139035}
   target: {fileID: 196298877}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -2886,7 +2886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 467674704}
   target: {fileID: 1700881980}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -5785,7 +5785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1147869892
 Transform:
   m_ObjectHideFlags: 0
@@ -5889,7 +5889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1147869893}
   target: {fileID: 771046139}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -8796,7 +8796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1684267330}
   target: {fileID: 1506480019}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0
@@ -10431,7 +10431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2075746249}
   target: {fileID: 210540206}
-  h: 2
+  h: 1
   gravity: -18
   launched: 0
   ballOfPlatform: 0

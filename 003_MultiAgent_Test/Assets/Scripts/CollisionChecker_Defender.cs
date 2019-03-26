@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColliderChecker_Receiver : MonoBehaviour
+public class CollisionChecker_Defender : MonoBehaviour
 {   
-    public PassAgent_Horizontal_RandomSpawn Agent;
+    public DefAgent_Hor Agent;
 
     // Start is called before the first frame update
     void Start()
     {
-        //catcher = this.gameObject.GetComponent<Ball_Catcher>();
     }
 
     // Update is called once per frame
@@ -19,7 +18,13 @@ public class ColliderChecker_Receiver : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-
-        Agent.TargetHit = true; 
+        
+        
+        if(other.name == "Ball")
+        {
+            Agent.SetReward(1f);
+            Agent.Done(); 
+        }
+        
     }
 }

@@ -25,6 +25,11 @@ public class PassAgent_Horizontal_RandomSpawn : Agent
         //print("agent done from agent: " + IsDone());
     }
 
+    public bool BallWasThrown()
+    {
+        return this.ballThrown;
+    }
+
     public override void AgentReset()
     {   
         EnvController.resetEnv_RandomSpawn();
