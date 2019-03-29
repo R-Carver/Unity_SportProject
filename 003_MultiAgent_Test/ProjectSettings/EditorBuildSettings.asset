@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/005HorizontalPassing_MultiAgentTest.unity
     guid: 1e703169002915a478e62b22e46e40a3
+  - enabled: 1
+    path: Assets/Scenes/007Cover_Experiment.unity
+    guid: d042717f975576542b1bac27058e4fa8
   m_configObjects: {}
