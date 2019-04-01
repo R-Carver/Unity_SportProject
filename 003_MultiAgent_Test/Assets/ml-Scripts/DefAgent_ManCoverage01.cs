@@ -44,19 +44,20 @@ public class DefAgent_ManCoverage01 : Agent
     public override void AgentAction(float[] vectorAction, string textAction)
     {   
         MoveAgent(vectorAction);
-        //print((Receiver.position - transform.position).sqrMagnitude);
-        // punish the agent if he leaves his assigned area
-        double rewardBig = (Receiver.position - transform.position).sqrMagnitude;
-        double reward = -rewardBig/10; 
-        //print(reward);
-        SetReward((float)Math.Round(reward,1));
-
 
         if(Receiver.localPosition.z < -10)
         {
             Done();
         }
+
+        // punish for leaving the area 
+        if(Math.Abs(transform.localPosition.z) > 6 || Math.Abs(transform.localPosition.x) > 5)
+        {
+            AddReward(-0.005f);
+        }
         //print(Receiver.localPosition);
+        Monitor.Log("reward", this.GetReward());
+        Monitor.Log("episode reward", this.GetCumulativeReward());
 
 
     }
