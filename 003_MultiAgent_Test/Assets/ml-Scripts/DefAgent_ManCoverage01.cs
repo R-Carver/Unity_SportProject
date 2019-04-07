@@ -56,39 +56,53 @@ public class DefAgent_ManCoverage01 : Agent
             AddReward(-0.005f);
         }
         //print(Receiver.localPosition);
-        Monitor.Log("reward", this.GetReward());
-        Monitor.Log("episode reward", this.GetCumulativeReward());
+        //Monitor.Log("reward", this.GetReward());
+        //Monitor.Log("episode reward", this.GetCumulativeReward());
 
 
     }
 
     public void MoveAgent(float[] act)
     {   
+        // Alternative version for the movement:
+        // The idea here is that we don't have to figure out the rotation, but we only move
+        // Globally right-left and up-down and adjust the rotation after that
+
         // punish for beeing idle
         AddReward(-0.001f);
-        Vector3 dirToGo = Vector3.zero;
-        Vector3 rotateDir = Vector3.zero;
+        Vector3 moveVertical = Vector3.zero;
+        Vector3 moveHorizontal = Vector3.zero;
 
         // get the move signals
-        int dirForward = (int) act[0];
-        int rotateDirAction = (int) act[1];
+        int verticalSignal = (int) act[0];
+        int horizontalSignal = (int) act[1];
 
-        if(dirForward == 1)
-        // move forward
-            dirToGo = transform.forward * 1f;
-        else if(dirForward == 2)
-        // move back
-            dirToGo = transform.forward * -1f;
+        if(verticalSignal == 1)
+            // move forward
+            moveVertical = Vector3.forward * 1f;
+        else if(verticalSignal == 2)
+            // move back
+            moveVertical = Vector3.forward * -1f;
 
-        if(rotateDirAction == 1)
-        // left rotation
-            rotateDir = transform.up * -1f;
-        else if(rotateDirAction == 2)
-        // right rotation
-            rotateDir = transform.up * 1f;
+        if(horizontalSignal == 1)
+            // left rotation
+            moveHorizontal = Vector3.right * -1f;
+        else if(horizontalSignal == 2)
+            // right rotation
+            moveHorizontal = Vector3.right * 1f;
+
+        Vector3 moveVector = moveHorizontal + moveVertical;
+        //moveVector = Vector3.Normalize(moveVector);
+        //print(moveVector);
+
+        // only change the rotation when you have a movement in some direction
+        if(!(verticalSignal == 0 && horizontalSignal == 0))
+        {
+            Quaternion walkRotation = Quaternion.LookRotation(moveVector, Vector3.up);
+            transform.rotation = walkRotation;
+        }
         
-        transform.Rotate(rotateDir, Time.fixedDeltaTime * 300f);
-        agentRB.AddForce(dirToGo * academy.agentRunSpeed , ForceMode.VelocityChange);
+        agentRB.AddForce(moveVector * academy.agentRunSpeed , ForceMode.VelocityChange);
     }
 
     private void FixedUpdate() 

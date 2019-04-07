@@ -10,7 +10,7 @@ public class ColliderChecker : MonoBehaviour
            
         if(other.name == "Defender"){
             Agent.AddReward(0.005f);
-            print("covering");
+            //print("covering");
         }
         //Agent.SetReward(1f);
         //Agent.Done(); 

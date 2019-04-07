@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ab88d6e61d55cbb43ac07ee2c434ee3b
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/models/ManCoverage04.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

@@ -21,5 +21,5 @@ MonoBehaviour:
     - Forward/Back
     - Rotate
     vectorActionSpaceType: 0
-  model: {fileID: 11400000, guid: bce48d4603fd4bc489f06ce313c00747, type: 3}
+  model: {fileID: 11400000, guid: 4f7a4d1eb5bba07488d4e4bfdc7747e1, type: 3}
   inferenceDevice: 0
