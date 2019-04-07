@@ -1,0 +1,6 @@
+07.04.2019
+
+	DefAgent_ManCoverage01.cs
+
+Skript für das Verteidigen, mit laugen und rotieren (2 mal 3 diskrete aktionen)
+-----------------------------------------------------------------------------------------------
