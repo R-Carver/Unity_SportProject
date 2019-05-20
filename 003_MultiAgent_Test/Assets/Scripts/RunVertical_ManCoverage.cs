@@ -5,7 +5,8 @@ using UnityEngine;
 public class RunVertical_ManCoverage : MonoBehaviour
 {
     public int speed = 1;
-    
+  
+
     // Start is called before the first frame update
     void Start()
     {

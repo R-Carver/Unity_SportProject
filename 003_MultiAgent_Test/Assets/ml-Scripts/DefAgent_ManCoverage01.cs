@@ -9,6 +9,9 @@ public class DefAgent_ManCoverage01 : Agent
     public Transform Receiver;
     public EnvController_ManCoverage envController;
 
+    //we need the RouteController to determine whether the routes are done
+    RouteController routeController;
+
     Rigidbody agentRB;
     Academy_ManCoverage academy;
     
@@ -22,6 +25,8 @@ public class DefAgent_ManCoverage01 : Agent
         agentRB = GetComponent<Rigidbody>();
         startRotation = transform.rotation;
         startPosition = transform.localPosition;
+
+        
     }
 
     public override void AgentReset()
@@ -43,10 +48,20 @@ public class DefAgent_ManCoverage01 : Agent
     // so in the first iteration there are 2 discrete arrays with 3 values each (like: dont move, move forward, move backward)
     public override void AgentAction(float[] vectorAction, string textAction)
     {   
+        routeController = RouteController.Instance;
+
         MoveAgent(vectorAction);
 
-        if(Receiver.localPosition.z < -10)
+        //version with one route
+        /* if(Receiver.localPosition.z < -10)
         {
+            Done();
+        }*/
+
+        //version with many routes
+        if(routeController.currentRouteFinished == true)
+        {   
+            print("reaction to finished route");
             Done();
         }
 
