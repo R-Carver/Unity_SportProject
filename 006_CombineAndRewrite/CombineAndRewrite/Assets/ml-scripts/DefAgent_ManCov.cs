@@ -110,11 +110,10 @@ public class DefAgent_ManCov : Agent
             transform.rotation = walkRotation;
         }
 
-        //print("moveVector " + moveVector);
-        //print("runSpeed " + academy.agentRunSpeed);
-
-        agentRB.AddForce(moveVector * academy.agentRunSpeed , ForceMode.VelocityChange);
-        //agentRB.AddForce(moveVector * 0.5f , ForceMode.VelocityChange);
+        Vector3 target = transform.position + moveVector;
+        float speed = academy.agentRunSpeed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, target, speed);
+        
     }
 
     private void FixedUpdate() 

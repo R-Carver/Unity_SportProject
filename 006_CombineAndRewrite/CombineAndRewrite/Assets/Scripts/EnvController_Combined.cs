@@ -17,6 +17,8 @@ public class EnvController_Combined : MonoBehaviour
 
     private DefAgent_ManCov defAgent;
 
+    private Catcher catchSkript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,9 @@ public class EnvController_Combined : MonoBehaviour
 
         GameObject defender = GameObject.Find("Defender");
         defAgent = defender.GetComponent<DefAgent_ManCov>();
+
+        GameObject catcher = GameObject.Find("CatchAreaArm");
+        catchSkript = catcher.GetComponent<Catcher>();
     }
 
     // Update is called once per frame
@@ -63,6 +68,9 @@ public class EnvController_Combined : MonoBehaviour
         //we have to reset the DefAgent manually here
         //defAgent.AgentReset();
         //defAgent.episodeDone = true;
+
+        //mark the ball as not caught in the catcher skript
+        catchSkript.caught = false;
         
     }
 
