@@ -1,0 +1,502 @@
+05.06.2019 22:32:42
+ 
+Exception
+NullReferenceException: Object reference not set to an instance of an object
+RouteRenderer.InitRouteRenderer (Route route) (at Assets/Scripts/RouteSystem/RouteRenderer.cs:53)
+RunMulti.Start () (at Assets/Scripts/RunMulti.cs:27)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
+Log
+route finished
+UnityEngine.MonoBehaviour:print(Object)
+RunMulti:Update() (at Assets/Scripts/RunMulti.cs:57)
+
