@@ -19,8 +19,6 @@ public class DefAgent_ManCov : Agent
     Quaternion startRotation;
     Vector3 startPosition;
 
-    public bool episodeDone = false;
-
     public override void InitializeAgent()
     {   
         academy = FindObjectOfType<Academy_Combined>();
@@ -33,11 +31,8 @@ public class DefAgent_ManCov : Agent
     {   
         // for now the PassAgent is resetting the env
         //this should be centralised later
-        //envController.resetEnv();
         transform.localPosition = startPosition;
         transform.rotation = startRotation;
-        episodeDone = false;
-        //print("defAgent reset");
     }
 
     public override void CollectObservations()
@@ -54,16 +49,10 @@ public class DefAgent_ManCov : Agent
         MoveAgent(vectorAction);
 
         //version with many routes
-        if(routeController.currentRouteFinished == true)
+        /* if(routeController.currentRouteFinished == true)
         {   
-            print("reaction to finished route");
             Done();
-        }
-
-        if(episodeDone == true)
-        {
-            Done();
-        }
+        }*/
 
         // punish for leaving the area 
         if(Math.Abs(transform.localPosition.z) > 6 || Math.Abs(transform.localPosition.x) > 5)

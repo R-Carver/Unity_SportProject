@@ -7,6 +7,7 @@ public class Catcher : MonoBehaviour
     public bool caught = false;
 
     GameObject ball;
+
     private void OnTriggerEnter(Collider other) {
         
         if(other.gameObject.name == "Ball")
@@ -17,7 +18,9 @@ public class Catcher : MonoBehaviour
             ballRb.useGravity = false;
 
             caught = true;
-            print("Ball caught");
+
+            GameController.GetInstance().defAgent.SetReward(1.0f);
+            GameController.GetInstance().academy.Done();
         }
     }
 

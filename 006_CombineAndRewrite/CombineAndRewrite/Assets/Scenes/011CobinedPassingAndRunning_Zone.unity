@@ -430,8 +430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87bc4707018e1ca4f9a5b237a4d1ef62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 575266062}
-  defAgent: {fileID: 8182071141046775470}
 --- !u!64 &313911432
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -661,8 +659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c28626120fd3464ab7d565153eee60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 575266062}
-  defAgent: {fileID: 8182071141046775470}
 --- !u!136 &406721215
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -947,8 +943,6 @@ MonoBehaviour:
   ThrowDestination: {fileID: 821758177}
   ballController: {fileID: 1517659811}
   envController: {fileID: 777703732}
-  TargetHit: 0
-  TargetMissed: 0
 --- !u!1 &634867677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +1981,7 @@ MonoBehaviour:
   resetParameters:
     resetParameters: []
   agentRunSpeed: 2
+  envController: {fileID: 777703732}
 --- !u!4 &1178943083
 Transform:
   m_ObjectHideFlags: 0
@@ -2804,8 +2799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f69b01aab7d914084c3ff99de9c86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defAgent: {fileID: 8182071141046775470}
-  testBool: 0
 --- !u!4 &1822648229
 Transform:
   m_ObjectHideFlags: 0
@@ -3169,6 +3162,7 @@ GameObject:
   - component: {fileID: 2021077410}
   - component: {fileID: 2021077409}
   - component: {fileID: 2021077408}
+  - component: {fileID: 2021077411}
   m_Layer: 0
   m_Name: Cover_Target
   m_TagString: Untagged
@@ -3249,6 +3243,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021077406}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2021077411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021077406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f57712d3ae36104a903ef9824952fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2053566606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,6 +3358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c795fc605e68e48b2be22a8a125b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  academy: {fileID: 1178943082}
+  defAgent: {fileID: 0}
+  passAgent: {fileID: 0}
 --- !u!4 &2054422485
 Transform:
   m_ObjectHideFlags: 0
@@ -4365,7 +4374,6 @@ MonoBehaviour:
     numberOfActionsBetweenDecisions: 6
   Receiver: {fileID: 647143604}
   envController: {fileID: 777703732}
-  episodeDone: 0
 --- !u!23 &8182071141455936864
 MeshRenderer:
   m_ObjectHideFlags: 0

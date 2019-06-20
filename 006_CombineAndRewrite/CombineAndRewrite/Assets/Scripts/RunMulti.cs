@@ -56,6 +56,9 @@ public class RunMulti : MonoBehaviour{
                 //set the route to finished to be able to reset the env
                 print("route finished");
                 routeController.currentRouteFinished = true;
+
+                //finished routes means resetting the episode
+                GameController.GetInstance().academy.Done();
             }
         }
     }

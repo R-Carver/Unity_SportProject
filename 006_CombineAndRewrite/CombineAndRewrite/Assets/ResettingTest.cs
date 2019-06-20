@@ -1,24 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MLAgents;
 
 public class ResettingTest : MonoBehaviour
 {   
-    public DefAgent_ManCov defAgent;
-    public bool testBool = false;
 
+    Academy_Combined academy;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject academyGo = GameObject.Find("Academy");
+        academy = academyGo.GetComponent<Academy_Combined>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(testBool == true)
-        {
-            defAgent.episodeDone = true;   
+        if(Input.GetKeyDown("space"))
+        {   
+            print("should reset the academy");
+            academy.Done();
         }
         
     }
