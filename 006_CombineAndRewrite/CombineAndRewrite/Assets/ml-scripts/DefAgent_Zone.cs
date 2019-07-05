@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class DefAgent_ManCov : Agent
+public class DefAgent_Zone : Agent
 {
     public Transform Receiver;
-    public EnvController_Combined envController;
 
     //we need the RouteController to determine whether the routes are done
     RouteController routeController;
@@ -53,6 +52,12 @@ public class DefAgent_ManCov : Agent
         {
             AddReward(-0.005f);
         }
+
+        //punish for leaving the zone
+        if(IsInZone() == false)
+        {
+            AddReward(-0.05f);
+        }
     }
 
     public void MoveAgent(float[] act)
@@ -95,8 +100,28 @@ public class DefAgent_ManCov : Agent
 
         Vector3 target = transform.position + moveVector;
         float speed = academy.agentRunSpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target, speed);
         
+        transform.position = Vector3.MoveTowards(transform.position, target, speed);
+    }
+
+    bool IsInZone()
+    {   
+        //x coord
+        float xMin = startPosition.x - 2.5f;
+        float xMax = startPosition.x + 2.5f;
+
+        //z coord (is the other way around)
+        float zMin = startPosition.z + 2.0f;
+        float zMax = startPosition.z - 2.0f;
+
+        if(transform.localPosition.x > xMin && transform.localPosition.x < xMax ){
+            
+            if(transform.localPosition.z < zMin && transform.localPosition.z > zMax ){
+                return true;
+            }
+            return false;
+        }
+        return false;
     }
 
     private void FixedUpdate() 

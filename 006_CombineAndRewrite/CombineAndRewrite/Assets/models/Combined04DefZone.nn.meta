@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 659c0938552755344bb99890e2809e3f
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/models/Combined04DefZone.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

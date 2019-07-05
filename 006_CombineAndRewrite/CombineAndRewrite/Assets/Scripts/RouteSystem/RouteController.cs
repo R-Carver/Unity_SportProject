@@ -37,7 +37,7 @@ public class RouteController
 
         Route route1 = new Route(2);
         route1.addWayPoint(0, new Vector3(0,0,-5));
-        route1.addWayPoint(1, new Vector3(-5, 0, 0));
+        route1.addWayPoint(1, new Vector3(-9, 0, 0));
         routes[0] = route1;
 
         //slant route
@@ -54,7 +54,7 @@ public class RouteController
         //In-route close
         Route route4 = new Route(2);
         route4.addWayPoint(0, new Vector3(0,0,-2));
-        route4.addWayPoint(1, new Vector3(-7, 0, 0));
+        route4.addWayPoint(1, new Vector3(-9, 0, 0));
         routes[3] = route4; 
 
         //Comeback route

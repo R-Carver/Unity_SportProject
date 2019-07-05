@@ -7,8 +7,11 @@ public class CoverTargetCollChecker : MonoBehaviour
     private void OnTriggerStay(Collider col)
     {
         if(col.name == "Defender")
-        {
-            GameController.GetInstance().defAgent.AddReward(0.005f);
+        {   
+            if(GameController.GetInstance().defAgent != null)
+            {
+                GameController.GetInstance().defAgent.AddReward(0.005f);
+            }
         }
     }
 }

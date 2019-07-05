@@ -8,7 +8,7 @@ public class ColliderCheckerGround : MonoBehaviour
         
         if(other.gameObject.name == "Ball"){
             
-            GameController.GetInstance().passAgent.SetReward(-0.2f);
+            GameController.GetInstance().passAgent.SetReward(-0.1f);
 
             GameController.GetInstance().academy.Done();
 

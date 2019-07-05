@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 73bb91fcd5b1533469c1b0dee9f7c4e8
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400002: Assets/models/PasserBrain1.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

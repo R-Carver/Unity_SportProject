@@ -9,7 +9,7 @@ public class TargetController : MonoBehaviour
 
     Vector3 targetForward;
     Vector3 targetBack;
-    public float speed = 1;
+    public float speed = 2.0f;
     // Start is called before the first frame update
 
     int waypointIndex = 0;

@@ -19,7 +19,16 @@ public class Catcher : MonoBehaviour
 
             caught = true;
 
-            GameController.GetInstance().defAgent.SetReward(1.0f);
+            if(GameController.GetInstance().defAgent != null)
+            {
+                GameController.GetInstance().defAgent.SetReward(1.0f);
+            }
+
+            if(GameController.GetInstance().passAgent != null)
+            {
+                GameController.GetInstance().passAgent.SetReward(-1.0f);
+            }
+            
             GameController.GetInstance().academy.Done();
         }
     }

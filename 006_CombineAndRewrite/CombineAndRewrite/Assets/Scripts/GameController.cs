@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public Academy_Combined academy;
 
     //Agents
-    public DefAgent_ManCov defAgent;
+    public DefAgent_Zone defAgent;
     public PassAgent passAgent;
 
     void Awake()
@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
         passAgent = passAgentGo.GetComponent<PassAgent>();
 
         GameObject defAgentGo = GameObject.Find("Defender");
-        defAgent = defAgentGo.GetComponent<DefAgent_ManCov>();
+        defAgent = defAgentGo.GetComponent<DefAgent_Zone>();
 
 
         RouteController routeController = new RouteController();

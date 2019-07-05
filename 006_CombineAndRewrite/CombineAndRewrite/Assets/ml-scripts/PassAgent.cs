@@ -7,6 +7,8 @@ public class PassAgent : Agent
 {
     
     public Transform Receiver;
+
+    public Transform Defender;
     public Transform ThrowDestination;
     public Ball_Controller ballController;
     TargetController targetController;
@@ -48,6 +50,8 @@ public class PassAgent : Agent
         //In this version the receiver and the target can be
         //on a 2D Interval 
         //An alternative would be to give the route as observation
+        AddVectorObs(Defender.localPosition.x);
+        AddVectorObs(Defender.localPosition.z);
         AddVectorObs(Receiver.localPosition.x);
         AddVectorObs(Receiver.localPosition.z);
         AddVectorObs(ThrowDestination.localPosition.x);
@@ -102,5 +106,8 @@ public class PassAgent : Agent
             SetReward(-0.5f);
             Done();
         }
+
+        //simulate pressure - punish for not throwing
+        AddReward(-0.002f);
     }
 }

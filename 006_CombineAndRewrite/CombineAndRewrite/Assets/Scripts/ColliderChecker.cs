@@ -15,7 +15,11 @@ public class ColliderChecker : MonoBehaviour
             //Ball was caught, so give reward for a good pass
             //and a punishment for the defender
             GameController.GetInstance().passAgent.SetReward(1.0f);
-            GameController.GetInstance().defAgent.SetReward(-1.0f);
+
+            if(GameController.GetInstance().defAgent != null)
+            {
+                GameController.GetInstance().defAgent.SetReward(-1.0f);
+            }
             
             GameController.GetInstance().academy.Done();
         }

@@ -44,22 +44,6 @@ public class Ball_Controller : MonoBehaviour
         return new LaunchData(velocityXZ + velocityY, time);
     }
 
-    public int TargetSpeed = 3;
-    public void MoveTarget(float zValue)
-    {
-        // in the current version we only move the target along the route of the receiver
-        // which is along the z axis
-        Vector3 movement = new Vector3(0, 0, zValue);
-        if(target.localPosition.z < 3 && zValue >= 0)
-        {
-            target.Translate(movement * TargetSpeed *Time.deltaTime);
-        }
-
-        if(target.localPosition.z > -4 && zValue < 0)
-        {
-            target.Translate(movement * TargetSpeed *Time.deltaTime);
-        }
-    }
 
     public void ResetLauncher()
     {

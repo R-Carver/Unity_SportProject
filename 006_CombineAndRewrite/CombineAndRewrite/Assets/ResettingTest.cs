@@ -17,11 +17,11 @@ public class ResettingTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("space"))
+        /* if(Input.GetKeyDown("space"))
         {   
             print("should reset the academy");
             academy.Done();
-        }
+        }*/
         
     }
 }
